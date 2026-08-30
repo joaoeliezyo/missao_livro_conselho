@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manual do Conselho Editorial Prévio - Volume Coletivo</title>
+    <style>
+      :root {
+        --bg: #f5f7fa;
+        --card: #ffffff;
+        --text: #20242a;
+        --muted: #5f6875;
+        --line: #d9dee6;
+        --accent: #155eef;
+        --accent-soft: #eef4ff;
+        --ok: #087443;
+        --warn: #9a6700;
+        --danger: #b42318;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+      }
+      .container {
+        width: min(1100px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+      header {
+        background: #172033;
+        color: white;
+        padding: 56px 0 44px;
+      }
+      header .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.8rem;
+        opacity: 0.75;
+      }
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        line-height: 1.1;
+        margin: 10px 0 16px;
+      }
+      header p {
+        max-width: 780px;
+        margin: 0;
+        color: #dbe2ee;
+      }
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: white;
+        border-bottom: 1px solid var(--line);
+      }
+      nav .container {
+        display: flex;
+        gap: 18px;
+        overflow-x: auto;
+        padding: 12px 0;
+      }
+      nav a {
+        color: var(--text);
+        text-decoration: none;
+        white-space: nowrap;
+        font-size: 0.9rem;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+      main {
+        padding: 36px 0 70px;
+      }
+      section {
+        margin: 0 0 42px;
+      }
+      h2 {
+        font-size: 1.75rem;
+        margin: 0 0 14px;
+      }
+      h3 {
+        margin-top: 28px;
+      }
+      p {
+        margin: 10px 0;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 22px;
+        margin: 16px 0;
+      }
+      .notice {
+        background: var(--accent-soft);
+        border-left: 4px solid var(--accent);
+        padding: 16px 18px;
+        margin: 18px 0;
+      }
+      .warning {
+        background: #fff8e6;
+        border-left: 4px solid var(--warn);
+        padding: 16px 18px;
+        margin: 18px 0;
+      }
+      .danger {
+        background: #fff1f0;
+        border-left: 4px solid var(--danger);
+        padding: 16px 18px;
+        margin: 18px 0;
+      }
+      .success {
+        background: #edfdf4;
+        border-left: 4px solid var(--ok);
+        padding: 16px 18px;
+        margin: 18px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 18px 0;
+        background: white;
+      }
+      th,
+      td {
+        border: 1px solid var(--line);
+        padding: 11px 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #eef1f5;
+      }
+      ul,
+      ol {
+        padding-left: 24px;
+      }
+      li {
+        margin: 6px 0;
+      }
+      .checklist li {
+        list-style: none;
+        margin: 9px 0;
+      }
+      .checklist li::before {
+        content: '☐';
+        margin-right: 9px;
+        color: var(--accent);
+      }
+      .badge {
+        display: inline-block;
+        padding: 3px 8px;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        font-weight: bold;
+        background: #eef1f5;
+      }
+      .must {
+        background: #ffe9e7;
+        color: var(--danger);
+      }
+      .recommended {
+        background: #eaf7ef;
+        color: var(--ok);
+      }
+      .template {
+        background: #10151d;
+        color: #e8edf5;
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 50px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      .small {
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+      @media print {
+        nav {
+          display: none;
+        }
+        body {
+          background: white;
+        }
+        .card,
+        table {
+          break-inside: avoid;
+        }
+        header {
+          background: white;
+          color: black;
+          border-bottom: 2px solid #222;
+        }
+        header p {
+          color: #333;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="eyebrow">Manual interno de preparação editorial</div>
+        <h1>Conselho Editorial Prévio</h1>
+        <p>
+          Guia operacional para a equipe de alunos responsável por avaliar,
+          organizar, revisar e preparar um volume coletivo antes de sua
+          submissão à EDIFPI/IFPI.
+        </p>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <a href="#escopo">Escopo</a>
+        <a href="#papel">Papel</a>
+        <a href="#fluxo">Fluxo</a>
+        <a href="#avaliacao">Avaliação</a>
+        <a href="#parecer">Parecer</a>
+        <a href="#direitos">Direitos</a>
+        <a href="#qualidade">Qualidade</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#entrega">Entrega</a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section id="escopo">
+        <h2>1. Objetivo do manual</h2>
+        <p>
+          Este manual estabelece um procedimento interno para que uma equipe de
+          alunos atue como uma
+          <strong>instância editorial preparatória</strong>. O objetivo é
+          entregar à EDIFPI uma obra organizada, coerente, documentada e
+          tecnicamente revisada.
+        </p>
+
+        <div class="danger">
+          <strong>Importante:</strong> esta equipe não substitui o Conselho
+          Editorial oficial da EDIFPI e não pode declarar que a obra foi
+          aprovada pelo IFPI. A decisão institucional de publicação pertence ao
+          CE/EDIFPI.
+        </div>
+
+        <p>
+          A Resolução Normativa CONSUP/OSUPCOL/REI/IFPI nº 211, de 21 de maio de
+          2024, estabelece que as publicações da EDIFPI precisam de parecer
+          favorável e aprovação do CE/EDIFPI, e define um fluxo próprio de
+          avaliação e publicação.
+        </p>
+      </section>
+
+      <section id="papel">
+        <h2>2. Papel da equipe</h2>
+
+        <div class="card">
+          <h3>2.1 O que a equipe deve fazer</h3>
+          <ul>
+            <li>Verificar se o volume possui propósito editorial claro.</li>
+            <li>
+              Verificar se os capítulos são pertinentes ao tema e ao escopo do
+              volume.
+            </li>
+            <li>
+              Avaliar qualidade, coerência, originalidade e consistência dos
+              textos.
+            </li>
+            <li>
+              Identificar problemas metodológicos, bibliográficos e técnicos.
+            </li>
+            <li>Padronizar a estrutura editorial dos capítulos.</li>
+            <li>Verificar citações, referências, figuras, tabelas e fontes.</li>
+            <li>
+              Verificar possíveis problemas de plágio ou uso indevido de
+              conteúdo de terceiros.
+            </li>
+            <li>Verificar direitos de uso de imagens e outros materiais.</li>
+            <li>Registrar todas as decisões e pendências.</li>
+            <li>
+              Produzir um parecer interno e um pacote final para submissão.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>2.2 O que a equipe não deve fazer</h3>
+          <ul>
+            <li>Declarar que o livro está aprovado pelo IFPI.</li>
+            <li>
+              Usar o logotipo secundário da EDIFPI como se a obra já tivesse
+              sido aprovada.
+            </li>
+            <li>Emitir um parecer em nome do CE/EDIFPI oficial.</li>
+            <li>Ocultar problemas para acelerar a submissão.</li>
+            <li>
+              Alterar conclusões ou resultados dos autores sem justificativa e
+              autorização.
+            </li>
+            <li>
+              Modificar autoria, ordem de autores ou conteúdo sensível
+              unilateralmente.
+            </li>
+            <li>Substituir o processo formal de avaliação da EDIFPI.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="base">
+        <h2>3. Base normativa</h2>
+        <p>O trabalho deve considerar prioritariamente:</p>
+        <ol>
+          <li>
+            <strong
+              >Resolução Normativa CONSUP/OSUPCOL/REI/IFPI nº 211/2024</strong
+            >, que cria e regulamenta a EDIFPI.
+          </li>
+          <li>
+            <strong>Normas ABNT aplicáveis</strong>, especialmente a NBR 6029 e
+            suas normas adjacentes, expressamente mencionadas pela resolução.
+          </li>
+          <li>
+            <strong
+              >Manual de Normalização de Trabalhos Acadêmicos do IFPI</strong
+            >, quando pertinente à natureza acadêmica dos materiais.
+          </li>
+          <li>
+            Orientações e formulários publicados pela EDIFPI no momento da
+            submissão.
+          </li>
+        </ol>
+
+        <div class="warning">
+          <strong>Regra de atualização:</strong> antes do envio final, a equipe
+          deve conferir no site oficial do IFPI/EDIFPI se houve nova resolução,
+          política editorial, formulário, sistema de submissão ou orientação
+          específica.
+        </div>
+      </section>
+
+      <section id="fluxo">
+        <h2>4. Fluxo editorial interno</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Etapa</th>
+              <th>Objetivo</th>
+              <th>Resultado esperado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1. Recepção</td>
+              <td>Reunir os arquivos e dados dos autores.</td>
+              <td>Dossiê completo de cada capítulo.</td>
+            </tr>
+            <tr>
+              <td>2. Triagem</td>
+              <td>Eliminar pendências formais graves.</td>
+              <td>Capítulos aptos à avaliação.</td>
+            </tr>
+            <tr>
+              <td>3. Avaliação editorial</td>
+              <td>Analisar pertinência, estrutura e qualidade.</td>
+              <td>Ficha de avaliação.</td>
+            </tr>
+            <tr>
+              <td>4. Avaliação técnica</td>
+              <td>Conferir método, resultados, fontes e referências.</td>
+              <td>Parecer técnico ou revisão solicitada.</td>
+            </tr>
+            <tr>
+              <td>5. Direitos e integridade</td>
+              <td>Verificar autoria, plágio e materiais de terceiros.</td>
+              <td>Registro de conformidade.</td>
+            </tr>
+            <tr>
+              <td>6. Revisão com autores</td>
+              <td>Corrigir problemas apontados.</td>
+              <td>Versão revisada.</td>
+            </tr>
+            <tr>
+              <td>7. Padronização do volume</td>
+              <td>Unificar capítulos e elementos editoriais.</td>
+              <td>Manuscrito completo.</td>
+            </tr>
+            <tr>
+              <td>8. Reavaliação</td>
+              <td>Confirmar atendimento das exigências.</td>
+              <td>Versão final aprovada internamente.</td>
+            </tr>
+            <tr>
+              <td>9. Dossiê de submissão</td>
+              <td>Preparar documentação para a EDIFPI.</td>
+              <td>Pacote pronto para envio.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="success">
+          <strong>Princípio:</strong> nenhuma etapa deve ser considerada
+          concluída apenas porque o arquivo "parece pronto". Toda decisão
+          importante deve ter registro.
+        </div>
+      </section>
+
+      <section id="triagem">
+        <h2>5. Triagem inicial</h2>
+        <p>Antes de avaliar o conteúdo, confira:</p>
+
+        <ul class="checklist">
+          <li>Título do capítulo definido.</li>
+          <li>Nome completo de todos os autores confirmado.</li>
+          <li>Instituição/afiliação dos autores confirmada.</li>
+          <li>ORCID coletado quando disponível e pertinente.</li>
+          <li>Contato do autor responsável registrado.</li>
+          <li>Arquivo editável disponível.</li>
+          <li>Versão do texto identificada.</li>
+          <li>Resumo e palavras-chave presentes quando aplicáveis.</li>
+          <li>Referências presentes.</li>
+          <li>Figuras e tabelas identificadas.</li>
+          <li>Fontes das imagens identificadas.</li>
+          <li>
+            Declarações/autorização de uso de materiais de terceiros verificadas
+            quando necessárias.
+          </li>
+          <li>Trabalho anterior ou publicação prévia identificada.</li>
+        </ul>
+      </section>
+
+      <section id="avaliacao">
+        <h2>6. Avaliação editorial dos capítulos</h2>
+
+        <h3>6.1 Pertinência</h3>
+        <ul class="checklist">
+          <li>O capítulo está relacionado ao tema geral do volume.</li>
+          <li>O objetivo do capítulo é claro.</li>
+          <li>
+            O conteúdo apresenta interesse acadêmico, científico, técnico,
+            tecnológico ou cultural.
+          </li>
+          <li>O capítulo contribui efetivamente para o conjunto da obra.</li>
+          <li>Não há repetição excessiva de outro capítulo.</li>
+        </ul>
+
+        <h3>6.2 Estrutura</h3>
+        <ul class="checklist">
+          <li>O título representa adequadamente o conteúdo.</li>
+          <li>Existe introdução ou contextualização adequada.</li>
+          <li>O desenvolvimento possui sequência lógica.</li>
+          <li>A metodologia é descrita quando necessária.</li>
+          <li>
+            Resultados e discussões estão adequadamente apresentados quando
+            aplicáveis.
+          </li>
+          <li>As conclusões correspondem ao que foi desenvolvido.</li>
+          <li>As referências sustentam as afirmações relevantes.</li>
+        </ul>
+
+        <h3>6.3 Coerência e clareza</h3>
+        <ul class="checklist">
+          <li>
+            O texto possui linguagem compatível com publicação
+            acadêmica/técnica.
+          </li>
+          <li>
+            Conceitos fundamentais são apresentados de maneira compreensível.
+          </li>
+          <li>Não existem contradições internas relevantes.</li>
+          <li>Siglas são apresentadas na primeira ocorrência.</li>
+          <li>Tabelas e figuras são explicadas no texto.</li>
+        </ul>
+
+        <h3>6.4 Consistência científica/técnica</h3>
+        <ul class="checklist">
+          <li>As afirmações relevantes possuem fundamentação adequada.</li>
+          <li>Dados, resultados e conclusões são compatíveis.</li>
+          <li>Limitações do trabalho são apresentadas quando necessárias.</li>
+          <li>Métodos e ferramentas utilizados são identificados.</li>
+          <li>
+            Resultados não são apresentados de forma enganosa ou exagerada.
+          </li>
+        </ul>
+      </section>
+
+      <section id="integridade">
+        <h2>7. Integridade acadêmica e plágio</h2>
+
+        <p>
+          A equipe deve tratar integridade acadêmica como requisito de aprovação
+          interna, não como uma mera revisão de formatação.
+        </p>
+
+        <ul class="checklist">
+          <li>Verificar citações diretas e indiretas.</li>
+          <li>Conferir se as fontes citadas aparecem nas referências.</li>
+          <li>Conferir se referências relevantes são efetivamente citadas.</li>
+          <li>Investigar trechos potencialmente copiados sem atribuição.</li>
+          <li>Registrar evidências de qualquer suspeita.</li>
+          <li>
+            Solicitar esclarecimento ao autor antes de concluir pela
+            irregularidade.
+          </li>
+          <li>
+            Escalar casos graves ao responsável institucional antes da
+            submissão.
+          </li>
+        </ul>
+
+        <div class="danger">
+          <strong>Não fazer:</strong> acusar publicamente um autor de plágio com
+          base apenas em uma semelhança textual. O correto é registrar a
+          ocorrência, preservar a evidência, solicitar esclarecimentos e
+          encaminhar o caso para a instância competente.
+        </div>
+      </section>
+
+      <section id="direitos">
+        <h2>8. Direitos autorais, imagens e materiais de terceiros</h2>
+
+        <p>
+          A Resolução 211/2024 determina que os proponentes sejam responsáveis
+          pela qualidade das imagens e pelos direitos de uso. Também prevê
+          autorização assinada do detentor dos direitos autorais e/ou de imagem
+          quando necessária.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Material</th>
+              <th>Verificação</th>
+              <th>Registro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Imagem produzida pelo autor</td>
+              <td>Confirmar autoria.</td>
+              <td>Declaração ou registro interno.</td>
+            </tr>
+            <tr>
+              <td>Fotografia de pessoa</td>
+              <td>Verificar direito de imagem e autorização aplicável.</td>
+              <td>Autorização.</td>
+            </tr>
+            <tr>
+              <td>Imagem de site</td>
+              <td>Verificar licença e condições de uso.</td>
+              <td>URL, licença e data de consulta.</td>
+            </tr>
+            <tr>
+              <td>Gráfico/tabela de terceiro</td>
+              <td>Verificar fonte e necessidade de autorização.</td>
+              <td>Fonte e autorização, se aplicável.</td>
+            </tr>
+            <tr>
+              <td>Material com licença aberta</td>
+              <td>Verificar condições da licença.</td>
+              <td>Fonte + licença.</td>
+            </tr>
+            <tr>
+              <td>Logos e marcas</td>
+              <td>Verificar finalidade e direitos de uso.</td>
+              <td>Fonte e justificativa.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="warning">
+          Pequenos trechos de obras preexistentes podem estar sujeitos às
+          exceções legais mencionadas na própria resolução, mas a fonte deve ser
+          citada e referenciada. Na dúvida, encaminhe o caso ao responsável
+          institucional.
+        </div>
+      </section>
+
+      <section id="titulo">
+        <h2>9. Verificação do título do livro</h2>
+
+        <p>
+          Antes da submissão, a Resolução 211/2024 determina que os proponentes
+          façam pesquisa na Biblioteca Nacional para evitar coincidência com
+          títulos já publicados.
+        </p>
+
+        <ul class="checklist">
+          <li>Pesquisar o título completo.</li>
+          <li>Pesquisar combinações relevantes das palavras principais.</li>
+          <li>Registrar a data da pesquisa.</li>
+          <li>Registrar resultados relevantes.</li>
+          <li>Decidir se o título precisa ser alterado.</li>
+          <li>Guardar evidência da pesquisa no dossiê.</li>
+        </ul>
+
+        <div class="warning">
+          Após a solicitação do ISBN pela EDIFPI, a Resolução estabelece que não
+          será aceita alteração do título. Por isso, o título deve estar
+          consolidado antes dessa etapa.
+        </div>
+      </section>
+
+      <section id="parecer">
+        <h2>10. Sistema de decisão interno</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Decisão</th>
+              <th>Quando utilizar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge recommended">APTO</span></td>
+              <td>
+                O capítulo atende aos critérios e não apresenta pendências
+                relevantes.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="badge">APTO COM AJUSTES</span></td>
+              <td>
+                Existem problemas corrigíveis que não comprometem a publicação.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="badge must">NÃO APTO</span></td>
+              <td>
+                Existem problemas substanciais de conteúdo, integridade,
+                autoria, direitos ou pertinência.
+              </td>
+            </tr>
+            <tr>
+              <td><span class="badge">REAVALIAR</span></td>
+              <td>
+                É necessário parecer especializado ou informação adicional antes
+                de decidir.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Essas categorias são <strong>internas</strong> e não substituem as
+          categorias formais previstas para a avaliação da EDIFPI: deferimento,
+          indeferimento ou deferimento com ressalvas.
+        </p>
+
+        <h3>10.1 Critérios sugeridos de pontuação</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Critério</th>
+              <th>Peso</th>
+              <th>Nota 0–5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pertinência ao volume</td>
+              <td>20%</td>
+              <td>____</td>
+            </tr>
+            <tr>
+              <td>Qualidade e consistência do conteúdo</td>
+              <td>25%</td>
+              <td>____</td>
+            </tr>
+            <tr>
+              <td>Estrutura e clareza</td>
+              <td>15%</td>
+              <td>____</td>
+            </tr>
+            <tr>
+              <td>Fundamentação e referências</td>
+              <td>15%</td>
+              <td>____</td>
+            </tr>
+            <tr>
+              <td>Originalidade/contribuição</td>
+              <td>15%</td>
+              <td>____</td>
+            </tr>
+            <tr>
+              <td>Conformidade editorial</td>
+              <td>10%</td>
+              <td>____</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="small">
+          A pontuação é uma ferramenta de organização da equipe. Não deve ser
+          apresentada como critério oficial do CE/EDIFPI, salvo se
+          posteriormente adotada pela instituição.
+        </p>
+      </section>
+
+      <section id="parecer-modelo">
+        <h2>11. Modelo de parecer interno</h2>
+
+        <div class="template">
+          PARECER EDITORIAL INTERNO Volume: Título do capítulo: Autor(es):
+          Avaliador(es): Data: Versão analisada: 1. PERTINÊNCIA [ ] Adequada [ ]
+          Adequada com ajustes [ ] Inadequada Comentários: 2. QUALIDADE DO
+          CONTEÚDO [ ] Adequada [ ] Adequada com ajustes [ ] Inadequada
+          Comentários: 3. ESTRUTURA E CLAREZA [ ] Adequada [ ] Adequada com
+          ajustes [ ] Inadequada Comentários: 4. FUNDAMENTAÇÃO E REFERÊNCIAS [ ]
+          Adequadas [ ] Necessitam ajustes [ ] Insuficientes Comentários: 5.
+          INTEGRIDADE E ORIGINALIDADE [ ] Sem ocorrência identificada [ ]
+          Necessita esclarecimento [ ] Ocorrência relevante identificada
+          Comentários/evidências: 6. DIREITOS AUTORAIS E IMAGENS [ ] Regular [ ]
+          Pendência documental [ ] Problema de direitos identificado [ ] Não se
+          aplica Comentários: 7. RECOMENDAÇÕES 1. 2. 3. 8. DECISÃO INTERNA [ ]
+          APTO [ ] APTO COM AJUSTES [ ] NÃO APTO [ ] REAVALIAR JUSTIFICATIVA
+          FINAL: Observação: Este parecer é interno e preparatório. Não
+          representa decisão ou aprovação do Conselho Editorial da EDIFPI/IFPI.
+        </div>
+      </section>
+
+      <section id="confidencialidade">
+        <h2>12. Confidencialidade e conflitos de interesse</h2>
+
+        <p>
+          A Resolução 211/2024 estabelece que o conteúdo dos pareceres e
+          opiniões emitidos no processo editorial é reservado aos diretamente
+          interessados e que a identidade dos pareceristas deve ser preservada.
+        </p>
+
+        <ul class="checklist">
+          <li>Não compartilhar manuscritos fora da equipe autorizada.</li>
+          <li>Não publicar ou reutilizar trechos recebidos para avaliação.</li>
+          <li>Não divulgar o conteúdo de pareceres individualmente.</li>
+          <li>
+            Não revelar a identidade de avaliadores quando o processo exigir
+            anonimato.
+          </li>
+          <li>Declarar possível conflito de interesse.</li>
+          <li>
+            Não avaliar trabalho próprio ou de pessoa com relação que comprometa
+            a imparcialidade.
+          </li>
+        </ul>
+
+        <div class="notice">
+          <strong>Boa prática:</strong> manter uma pasta de avaliação separada
+          da pasta de produção. O arquivo original do autor deve ser preservado
+          e as alterações editoriais devem ser rastreáveis.
+        </div>
+      </section>
+
+      <section id="qualidade">
+        <h2>13. Revisão final do volume</h2>
+
+        <h3>13.1 Coerência entre capítulos</h3>
+        <ul class="checklist">
+          <li>Todos os capítulos seguem uma estrutura editorial compatível.</li>
+          <li>Os títulos possuem hierarquia consistente.</li>
+          <li>Os nomes dos autores estão padronizados.</li>
+          <li>As afiliações seguem o mesmo padrão.</li>
+          <li>
+            Resumo e palavras-chave seguem padrão comum quando aplicáveis.
+          </li>
+          <li>Figuras e tabelas seguem numeração e legenda consistentes.</li>
+          <li>Referências seguem padrão bibliográfico consistente.</li>
+          <li>
+            Termos técnicos importantes são utilizados de forma consistente.
+          </li>
+        </ul>
+
+        <h3>13.2 Elementos do livro</h3>
+        <ul class="checklist">
+          <li>Capa provisória ou proposta de capa.</li>
+          <li>Folha de rosto.</li>
+          <li>Apresentação ou prefácio, se houver.</li>
+          <li>Sumário.</li>
+          <li>Identificação dos organizadores.</li>
+          <li>Capítulos em ordem definitiva.</li>
+          <li>Referências.</li>
+          <li>Biografia dos autores, se adotada para o volume.</li>
+          <li>Elementos finais necessários.</li>
+        </ul>
+
+        <div class="warning">
+          A identidade visual definitiva, incluindo o uso institucional da
+          EDIFPI, deve ser tratada conforme as orientações da Editora. A equipe
+          preparatória não deve presumir que sua proposta gráfica será a versão
+          final.
+        </div>
+      </section>
+
+      <section id="checklist">
+        <h2>14. Checklist de liberação para submissão</h2>
+
+        <div class="card">
+          <h3>Documentação</h3>
+          <ul class="checklist">
+            <li>Lista definitiva de autores e organizadores.</li>
+            <li>Dados de contato.</li>
+            <li>ORCID quando disponível.</li>
+            <li>Declarações e autorizações necessárias.</li>
+            <li>Registro de pesquisa de título na Biblioteca Nacional.</li>
+            <li>Pareceres internos arquivados.</li>
+            <li>Registro das correções solicitadas e atendidas.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Conteúdo</h3>
+          <ul class="checklist">
+            <li>Todos os capítulos avaliados.</li>
+            <li>Pendências críticas resolvidas.</li>
+            <li>Referências verificadas.</li>
+            <li>Figuras e tabelas verificadas.</li>
+            <li>Questões de direitos autorais verificadas.</li>
+            <li>Problemas de integridade tratados.</li>
+            <li>Texto revisado.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Arquivo final</h3>
+          <ul class="checklist">
+            <li>Nome do arquivo padronizado.</li>
+            <li>Versão final identificada.</li>
+            <li>Sumário conferido.</li>
+            <li>Paginação conferida.</li>
+            <li>Links e referências digitais testados quando aplicáveis.</li>
+            <li>Imagens em qualidade adequada.</li>
+            <li>Arquivo editável preservado.</li>
+            <li>PDF de conferência preservado.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="entrega">
+        <h2>15. Dossiê para envio ao IFPI</h2>
+
+        <p>
+          Ao terminar a avaliação interna, a equipe deve entregar ao responsável
+          pelo projeto um dossiê organizado, contendo pelo menos:
+        </p>
+
+        <ol>
+          <li>Manuscrito final do volume.</li>
+          <li>Lista de capítulos e autores.</li>
+          <li>Relatório de avaliação editorial.</li>
+          <li>Pareceres dos capítulos.</li>
+          <li>Registro das pendências resolvidas.</li>
+          <li>Documentação de direitos autorais e imagem.</li>
+          <li>Pesquisa de título na Biblioteca Nacional.</li>
+          <li>Proposta de apresentação do livro.</li>
+          <li>Arquivos editáveis e PDF de conferência.</li>
+        </ol>
+
+        <div class="success">
+          <strong>Critério de liberação:</strong> a equipe só deve recomendar o
+          envio quando conseguir responder "sim" às perguntas: o conteúdo foi
+          avaliado? os problemas relevantes foram registrados? as correções
+          foram conferidas? os direitos foram verificados? a documentação está
+          organizada? o volume consegue ser compreendido e avaliado como uma
+          obra única?
+        </div>
+      </section>
+
+      <section id="governanca">
+        <h2>16. Registro das decisões</h2>
+
+        <p>Manter uma tabela central de controle:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Responsável</th>
+              <th>Status</th>
+              <th>Prazo</th>
+              <th>Observação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Capítulo 1</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+            </tr>
+            <tr>
+              <td>Capítulo 2</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+            </tr>
+            <tr>
+              <td>Direitos de imagem</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+            </tr>
+            <tr>
+              <td>Referências</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+            </tr>
+            <tr>
+              <td>Revisão final</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+            </tr>
+            <tr>
+              <td>Dossiê de submissão</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+              <td>________</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="fontes">
+        <h2>17. Fontes e observações normativas</h2>
+
+        <ul>
+          <li>
+            <strong
+              >IFPI. Resolução Normativa CONSUP/OSUPCOL/REI/IFPI nº 211, de 21
+              de maio de 2024.</strong
+            >
+            Cria e regulamenta a EDIFPI e disciplina seu fluxo editorial.
+          </li>
+          <li>
+            <strong
+              >IFPI. Manual de Normalização de Trabalhos Acadêmicos.</strong
+            >
+            Usado como referência institucional quando aplicável à natureza dos
+            textos.
+          </li>
+          <li>
+            <strong>ABNT NBR 6029 e normas adjacentes.</strong> A Resolução
+            211/2024 as estabelece como referência para a atuação editorial.
+          </li>
+        </ul>
+
+        <div class="notice">
+          <strong>Nota de atualização:</strong> este manual é um instrumento
+          interno de preparação. Quando houver conflito entre este documento e
+          uma norma, resolução, formulário ou orientação oficial vigente do
+          IFPI/EDIFPI, deve prevalecer a orientação institucional oficial.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
