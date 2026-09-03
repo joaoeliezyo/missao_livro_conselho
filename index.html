@@ -179,6 +179,12 @@
         font-family: 'Courier New', monospace;
         font-size: 0.9rem;
       }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 26px 0 50px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
       .small {
         font-size: 0.9rem;
         color: var(--muted);
@@ -276,11 +282,15 @@
             <li>
               Identificar problemas metodológicos, bibliográficos e técnicos.
             </li>
+            <li>
+              Adaptar todos os trabalhos para o formato de artigo, preservando
+              autoria, resultados e conteúdo essencial.
+            </li>
             <li>Padronizar a estrutura editorial dos capítulos.</li>
             <li>Verificar citações, referências, figuras, tabelas e fontes.</li>
             <li>
-              Verificar possíveis problemas de plágio ou uso indevido de
-              conteúdo de terceiros.
+              Verificar a correta atribuição de autoria, citações, referências e
+              uso de conteúdo de terceiros.
             </li>
             <li>Verificar direitos de uso de imagens e outros materiais.</li>
             <li>Registrar todas as decisões e pendências.</li>
@@ -412,6 +422,82 @@
         </div>
       </section>
 
+      <section id="artigo">
+        <h2>5. Adaptação obrigatória para o formato de artigo</h2>
+        <p>
+          Todo material selecionado para o volume, independentemente de sua
+          origem (artigo, relatório de software, monografia, TCC ou outro
+          trabalho), deverá ser
+          <strong>adaptado para o formato de artigo</strong> antes da versão
+          final do capítulo.
+        </p>
+        <div class="notice">
+          <strong>Regra editorial:</strong> a adaptação não consiste apenas em
+          alterar a formatação. O texto deve ser reestruturado para apresentar
+          uma unidade científica ou técnica, com objetivo, desenvolvimento,
+          metodologia quando aplicável, resultados e considerações finais
+          claramente definidos.
+        </div>
+        <h3>5.1 Estrutura editorial recomendada</h3>
+        <ol>
+          <li><strong>Título</strong></li>
+          <li><strong>Autor(es)</strong> e afiliações</li>
+          <li><strong>Resumo</strong></li>
+          <li><strong>Palavras-chave</strong></li>
+          <li><strong>1 INTRODUÇÃO</strong></li>
+          <li><strong>2 DESENVOLVIMENTO / FUNDAMENTAÇÃO</strong></li>
+          <li><strong>3 METODOLOGIA</strong>, quando aplicável</li>
+          <li><strong>4 RESULTADOS E DISCUSSÃO</strong>, quando aplicável</li>
+          <li><strong>5 CONSIDERAÇÕES FINAIS</strong></li>
+          <li><strong>REFERÊNCIAS</strong></li>
+        </ol>
+        <h3>5.2 Tratamento conforme a origem</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Origem</th>
+              <th>Tratamento editorial</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monografia/TCC</td>
+              <td>
+                Reduzir a estrutura acadêmica original e reorganizar o conteúdo
+                como artigo, eliminando elementos próprios do trabalho de
+                conclusão que não sejam necessários ao capítulo.
+              </td>
+            </tr>
+            <tr>
+              <td>Relatório de software</td>
+              <td>
+                Converter a documentação em artigo técnico, destacando problema,
+                solução, arquitetura, desenvolvimento, resultados e limitações.
+              </td>
+            </tr>
+            <tr>
+              <td>Artigo existente</td>
+              <td>
+                Adequar ao padrão editorial do volume, preservando seu conteúdo
+                científico e técnico.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>5.3 Extensão obrigatória</h3>
+        <div class="warning">
+          <strong>Cada capítulo deverá possuir entre 10 e 20 páginas.</strong> A
+          contagem será feita sobre o capítulo adaptado e diagramado, utilizando
+          o mesmo padrão de página adotado para todo o volume.
+        </div>
+        <p>
+          Textos com menos de 10 páginas devem ser ampliados de maneira
+          intelectualmente justificável. Textos acima de 20 páginas devem ser
+          condensados sem perda do conteúdo essencial. Não se deve inserir
+          conteúdo artificial apenas para atingir o limite.
+        </p>
+      </section>
+
       <section id="triagem">
         <h2>5. Triagem inicial</h2>
         <p>Antes de avaliar o conteúdo, confira:</p>
@@ -468,8 +554,8 @@
         <h3>6.3 Coerência e clareza</h3>
         <ul class="checklist">
           <li>
-            O texto possui linguagem compatível com publicação
-            acadêmica/técnica.
+            O texto utiliza linguagem formal, objetiva e compatível com
+            publicação acadêmica ou técnica.
           </li>
           <li>
             Conceitos fundamentais são apresentados de maneira compreensível.
@@ -492,34 +578,32 @@
       </section>
 
       <section id="integridade">
-        <h2>7. Integridade acadêmica e plágio</h2>
-
+        <h2>8. Integridade acadêmica e atribuição de fontes</h2>
         <p>
-          A equipe deve tratar integridade acadêmica como requisito de aprovação
-          interna, não como uma mera revisão de formatação.
+          Para este projeto,
+          <strong>não será realizada testagem automatizada de plágio</strong>
+          como etapa do processo editorial interno. A equipe deve, entretanto,
+          verificar a correta atribuição das fontes e a consistência entre
+          citações e referências.
         </p>
-
         <ul class="checklist">
           <li>Verificar citações diretas e indiretas.</li>
           <li>Conferir se as fontes citadas aparecem nas referências.</li>
           <li>Conferir se referências relevantes são efetivamente citadas.</li>
-          <li>Investigar trechos potencialmente copiados sem atribuição.</li>
-          <li>Registrar evidências de qualquer suspeita.</li>
           <li>
-            Solicitar esclarecimento ao autor antes de concluir pela
-            irregularidade.
+            Verificar atribuição de tabelas, figuras, imagens e outros materiais
+            de terceiros.
           </li>
+          <li>Registrar inconsistências encontradas.</li>
           <li>
-            Escalar casos graves ao responsável institucional antes da
-            submissão.
+            Solicitar correção ou esclarecimento ao autor quando necessário.
           </li>
         </ul>
-
-        <div class="danger">
-          <strong>Não fazer:</strong> acusar publicamente um autor de plágio com
-          base apenas em uma semelhança textual. O correto é registrar a
-          ocorrência, preservar a evidência, solicitar esclarecimentos e
-          encaminhar o caso para a instância competente.
+        <div class="notice">
+          A ausência de teste de plágio não elimina a responsabilidade editorial
+          de exigir atribuição adequada de autoria e fontes. Casos graves de
+          autoria ou direitos devem ser encaminhados ao responsável
+          institucional.
         </div>
       </section>
 
@@ -818,6 +902,9 @@
           <h3>Conteúdo</h3>
           <ul class="checklist">
             <li>Todos os capítulos avaliados.</li>
+            <li>
+              Todos os capítulos possuem entre 10 e 20 páginas no padrão final.
+            </li>
             <li>Pendências críticas resolvidas.</li>
             <li>Referências verificadas.</li>
             <li>Figuras e tabelas verificadas.</li>
@@ -966,5 +1053,14 @@
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="container">
+        <strong>Manual do Conselho Editorial Prévio</strong><br />
+        Documento interno de preparação editorial · Versão 1.1 · 2026<br /><br />
+        Base institucional principal: Resolução Normativa
+        CONSUP/OSUPCOL/REI/IFPI nº 211/2024.
+      </div>
+    </footer>
   </body>
 </html>
